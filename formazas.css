@@ -1,0 +1,71 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    flex: 0 0 100%;
+}
+footer {
+    flex: 0 0 100%;
+}
+nav {
+    flex: 0 0 200px;
+}
+nav ul {
+    list-style-type: none;
+}
+article {
+    flex: 1 1 auto;
+}
+
+form div {
+    display: flex;
+}
+form div label {
+    flex: 0 0 100px;
+    text-align: right;
+    padding-right: 5px;
+}
+.életkor {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex: 0 0 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav {
+        border: 1px solid black;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    form div {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    form div label {
+        text-align: left;
+        flex-basis: auto;
+    }
+}
